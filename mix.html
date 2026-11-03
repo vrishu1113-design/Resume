@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Website</title>
+
+    <style>
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* Heading styling */
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        /* List bullet styling */
+        ul {
+            list-style-type: square;
+            color: #333;
+        }
+
+        ol {
+            list-style-type: upper-roman;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Table header */
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        /* Alternating table rows */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* Form styling */
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+
+        /* Form labels */
+        label {
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        /* Spacing between form fields */
+        input, select {
+            margin-top: 8px;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+
+        /* Submit button */
+        input[type="submit"] {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1a5276;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Student Website</h1>
+
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+    <h2>Student Report Card</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Grade</th>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>Maths</td>
+            <td>90</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>Priya</td>
+            <td>Science</td>
+            <td>85</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>Amit</td>
+            <td>English</td>
+            <td>75</td>
+            <td>B</td>
+        </tr>
+
+    </table>
+
+    <h2>Registration Form</h2>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name">
+        <br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email">
+        <br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter password">
+        <br>
+
+        <label>Country:</label><br>
+        <select>
+            <option>India</option>
+            <option>USA</option>
+            <option>Canada</option>
+        </select>
+        <br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JavaScript
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Profile</title>
+
+    <style>
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Main heading */
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: #2c3e50;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 8px;
+        }
+
+        /* Sections */
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: square;
+            line-height: 2;
+        }
+
+        ol {
+            line-height: 2;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eaf2f8;
+        }
+
+        /* Form */
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1a5276;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Personal Profile</h1>
+
+    <!-- My Hobbies -->
+    <section>
+        <h2>My 5 Hobbies</h2>
+
+        <ul>
+            <li>Reading Books</li>
+            <li>Listening to Music</li>
+            <li>Playing Cricket</li>
+            <li>Learning New Technologies</li>
+            <li>Travelling</li>
+        </ul>
+    </section>
+
+    <!-- My Goals -->
+    <section>
+        <h2>My Top 5 Goals</h2>
+
+        <ol>
+            <li>Become a Full Stack Developer</li>
+            <li>Get a Good Job in IT</li>
+            <li>Improve My Programming Skills</li>
+            <li>Build Real-World Projects</li>
+            <li>Become Financially Independent</li>
+        </ol>
+    </section>
+
+    <!-- Weekly Schedule -->
+    <section>
+        <h2>My Weekly Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>HTML Practice</td>
+                <td>CSS Learning</td>
+                <td>Project Work</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>JavaScript</td>
+                <td>React Learning</td>
+                <td>Revision</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>HTML Practice</td>
+                <td>CSS Practice</td>
+                <td>Project Work</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>JavaScript</td>
+                <td>React Practice</td>
+                <td>Revision</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>Node.js</td>
+                <td>API Learning</td>
+                <td>Project Work</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>Project Practice</td>
+                <td>Interview Preparation</td>
+                <td>Revision</td>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td>Reading</td>
+                <td>Relaxation</td>
+                <td>Weekly Planning</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+        <h2>Contact Me</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input name="name" type="text" id="name"
+                   placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input name="email" type="email" id="email"
+                   placeholder="Enter your email">
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"
+                      placeholder="Write your message"
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 My Personal Profile | Created with HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
