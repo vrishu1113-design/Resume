@@ -1,0 +1,121 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 80px;
+}
+
+/* 3. Fixed Header */
+.header {
+    background-color: #172554;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+/* 1. Sidebar using Float */
+.sidebar {
+    width: 25%;
+    background-color: #dbeafe;
+    padding: 20px;
+    float: left;
+}
+
+/* Main Content */
+.content {
+    width: 72%;
+    padding: 20px;
+    float: right;
+}
+
+/* 2. Relative Position */
+.position-box {
+    background-color: #fef3c7;
+    border: 2px solid #d97706;
+    padding: 30px;
+    margin-top: 20px;
+
+    position: relative;
+    min-height: 180px;
+}
+
+/* Absolute Position */
+.floating-element {
+    background-color: #16a34a;
+    color: white;
+    padding: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Clear Float */
+.clear {
+    clear: both;
+}
+
+/* Starts below both floated columns and provides room to test scrolling. */
+.scroll-demo {
+    min-height: 700px;
+    padding: 20px;
+    background-color: #eff6ff;
+    border-top: 1px solid #bfdbfe;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .sidebar,
+    .content {
+        width: 100%;
+        float: none;
+    }
+
+    .header {
+        padding: 12px;
+    }
+
+    .header a {
+        margin-left: 5px;
+    }
+}

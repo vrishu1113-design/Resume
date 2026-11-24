@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #333366;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Solid Border */
+.solid {
+    border: 3px solid blue;
+}
+
+/* Dashed Border */
+.dashed {
+    border: 4px dashed green;
+}
+
+/* Dotted Border */
+.dotted {
+    border: 5px dotted orange;
+}
+
+/* Double Border */
+.double {
+    border: 6px double purple;
+}
+
+/* Rounded Border */
+.rounded {
+    border: 3px solid crimson;
+    border-radius: 25px;
+}
+
+/* Mixed Border */
+.mixed {
+    border-top: 5px solid red;
+    border-right: 5px dashed blue;
+    border-bottom: 5px dotted green;
+    border-left: 5px double purple;
+    border-radius: 15px;
+}

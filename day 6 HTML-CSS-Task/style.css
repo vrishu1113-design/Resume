@@ -1,0 +1,54 @@
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header using ID Selector */
+#title {
+    background-color: #62948c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #dce6f1;
+    text-align: right;
+    padding: 15px;
+}
+
+/* Navigation Links using Class Selector */
+.nav-link {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    color: #e67e22;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #34495e;
+}

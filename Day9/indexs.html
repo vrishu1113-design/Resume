@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <header class="header">
+        <h2>My Website</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Home</p>
+            <p>Services</p>
+            <p>About Us</p>
+        </aside>
+
+        <!-- Content -->
+        <section class="content">
+            <h2>Main Content</h2>
+            <p>
+                This is the main content section.
+                The sidebar is positioned on the left
+                using the float property.
+            </p>
+
+            <!-- Relative and Absolute Position -->
+            <div class="position-box">
+                <h3>Position Example</h3>
+                <div class="floating-element">
+                    I am floating!
+                </div>
+                <p>
+                    This element is positioned
+                    absolutely inside its container.
+                </p>
+            </div>
+        </section>
+
+        <!-- Clear Float -->
+        <div class="clear"></div>
+
+        <!-- Extra content makes it possible to scroll and test the fixed header. -->
+        <section class="scroll-demo">
+            <h2>Scroll Test Area</h2>
+            <p>
+                Scroll down this page to confirm that the header remains fixed at
+                the top. This section begins only after the floated sidebar and
+                content have been cleared.
+            </p>
+        </section>
+
+       
+
+    </main>
+
+    <footer>
+        <p>My Website Footer</p>
+    </footer>
+
+</body>
+</html>

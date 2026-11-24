@@ -1,0 +1,93 @@
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    background-color: #34495e;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* 1. Background Image */
+.hero {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+}
+
+/* 2. Background Color */
+.color-section {
+    background-color: #d1e8e2;
+    color: #145a45;
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 3. Background Image on Another Element */
+.image-section {
+    background-color: #e8daef;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+    padding: 60px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* 4. Background Position */
+.position-section {
+    background-color: #d6eaf8;
+    background-image: url("images/background.jpg");
+    background-size: 250px;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    color: #1b2631;
+    padding: 60px 20px;
+    margin-top: 20px;
+    min-height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

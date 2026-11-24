@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3eded;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(161, 183, 190);
+    border: 2px solid rgb(34, 34, 43);
+    padding: 20px ;
+    margin: 50px;
+}
+
+    /* Margin Example */
+.box {
+    background-color: rgb(218, 246, 218);
+    border: 2px solid rgb(19, 21, 19);
+    padding: 15px;
+}
+
+.box-one {
+    margin: 20px;
+}
+
+.box-two {
+    margin: 40px;
+}
+
+/* Center Box Using Auto */
+.center-box {
+    background-color: rgb(225, 216, 217);
+    border: 2px solid rgb(52, 47, 47);
+    padding: 20px;
+    width: 300px;
+    margin: 30px auto;
+}

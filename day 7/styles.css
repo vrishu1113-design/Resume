@@ -1,0 +1,84 @@
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Heading Font */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Paragraph Font */
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* 1. Font Size */
+.small-text {
+    font-size: 14px;
+}
+
+.medium-text {
+    font-size: 20px;
+}
+
+.large-text {
+    font-size: 28px;
+}
+
+/* 2. Font Weight */
+.normal-weight {
+    font-weight: 400;
+}
+
+.bold-weight {
+    font-weight: 700;
+}
+
+.light-weight {
+    font-weight: 300;
+}
+
+/* 3. Font Style */
+.normal-style {
+    font-style: normal;
+}
+
+.italic-style {
+    font-style: italic;
+}
+
+.oblique-style {
+    font-style: oblique;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

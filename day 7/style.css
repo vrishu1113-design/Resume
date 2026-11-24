@@ -1,0 +1,73 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Common styling for all sections */
+.color-box {
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 1. Named Colors */
+.named {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+/* 2. HEX Colors */
+.hex {
+    background-color: #d1f2eb;
+    color: #145a32;
+}
+
+/* 3. RGB Colors */
+.rgb {
+    background-color: rgb(255, 218, 185);
+    color: rgb(139, 69, 19);
+}
+
+/* 4. RGBA Colors */
+.rgba {
+    background-color: rgba(255, 99, 71, 0.7);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* 5. HSL Colors */
+.hsl {
+    background-color: hsl(200, 80%, 85%);
+    color: hsl(220, 70%, 25%);
+}
+
+/* 6. HSLA Colors */
+.hsla {
+    background-color: hsla(280, 70%, 70%, 0.7);
+    color: hsla(280, 90%, 15%, 1);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

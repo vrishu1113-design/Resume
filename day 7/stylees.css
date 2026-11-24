@@ -1,0 +1,96 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* 1. Text Alignment */
+.center-heading {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+/* 2. Text Transformation */
+.transform-heading {
+    text-transform: uppercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* 3. Letter Spacing */
+.spacing-heading {
+    letter-spacing: 3px;
+}
+
+.normal-spacing {
+    letter-spacing: normal;
+}
+
+.wide-spacing {
+    letter-spacing: 3px;
+}
+
+.extra-spacing {
+    letter-spacing: 6px;
+}
+
+/* 4. Text Shadow */
+.shadow-heading {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
