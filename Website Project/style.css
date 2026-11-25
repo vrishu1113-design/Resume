@@ -1,11 +1,13 @@
-/* ===== General Styling ===== */
+
+/* =========================================
+   GENERAL STYLING
+========================================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -16,17 +18,26 @@ body {
     background-color: #f4f8fb;
     color: #263238;
     line-height: 1.6;
-    padding-top: 85px;
+
+    /* Space below fixed header */
+    padding-top: 70px;
 }
 
-/* ===== Header and Navigation ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+
+/* =========================================
+   HEADER AND NAVIGATION
+========================================= */
 
 header {
     background-color: #123047;
     color: white;
 
-    padding: 18px 8%;
+    padding: 14px 8%;
 
     display: flex;
     justify-content: space-between;
@@ -35,55 +46,56 @@ header {
     flex-wrap: wrap;
     gap: 15px;
 
+    /* Fixed header */
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
 
+    width: 100%;
     z-index: 1000;
 }
 
-
-
 header h1 {
-    color: #ffffff;
+    color: white;
     font-size: 28px;
+    line-height: 1.2;
 }
-
 
 nav {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
-
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+
     transition: color 0.3s;
 }
-
 
 nav a:hover {
     color: #43d9c5;
 }
 
 
-
-
-/* ===== Common Section Styling ===== */
+/* =========================================
+   COMMON SECTION STYLING
+========================================= */
 
 section {
     padding: 60px 8%;
-    scroll-margin-top: 90px;
-}
 
+    /* Prevent fixed header covering section headings */
+    scroll-margin-top: 80px;
+}
 
 section h2 {
     text-align: center;
     color: #123047;
+
     font-size: 32px;
     margin-bottom: 30px;
 }
@@ -93,13 +105,10 @@ p {
     margin-bottom: 15px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
-
-/* =====  Hero Section ===== */
+/* =========================================
+   HERO SECTION
+========================================= */
 
 #home {
     min-height: 550px;
@@ -111,46 +120,57 @@ img {
 
     text-align: center;
 
-    background: linear-gradient(
-        rgba(18, 48, 71, 0.70),
-        rgba(18, 48, 71, 0.70)
-    ),
-    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b")
-    center / cover no-repeat;
+    background:
+        linear-gradient(
+            rgba(18, 48, 71, 0.70),
+            rgba(18, 48, 71, 0.70)
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b")
+        center / cover no-repeat;
 
     color: white;
+
     padding: 100px 8%;
 }
 
 #home h2 {
-     color: white;
+    color: white;
+
     max-width: 850px;
     font-size: 48px;
     line-height: 1.2;
+
     margin-bottom: 20px;
 }
 
 #home p {
-     color: white;
+    color: white;
+
     max-width: 650px;
     font-size: 18px;
 }
 
-
+/* Hide the separate hero image */
 #home img {
     display: none;
 }
 
+/* Hero button */
 
 #home a {
     display: inline-block;
+
     background-color: #20bfa9;
     color: white;
+
     text-decoration: none;
     font-weight: bold;
+
     padding: 14px 28px;
     border-radius: 30px;
+
     margin-top: 20px;
+
     transition: background-color 0.3s;
 }
 
@@ -159,12 +179,14 @@ img {
 }
 
 
-
-/* ===== Destinations Grid ===== */
+/* =========================================
+   DESTINATIONS GRID
+========================================= */
 
 #destinations {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 }
 
@@ -178,7 +200,7 @@ img {
 
     padding: 20px;
 
-    background-color: #f4f8fb;
+    background-color: white;
     border-radius: 12px;
 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -193,6 +215,7 @@ img {
 #destinations img {
     width: 100%;
     height: 200px;
+
     object-fit: cover;
 
     border-radius: 8px;
@@ -200,11 +223,14 @@ img {
 }
 
 
-/* ===== Travel Packages Grid ===== */
+/* =========================================
+   TRAVEL PACKAGES GRID
+========================================= */
 
 #packages {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 }
 
@@ -235,11 +261,14 @@ img {
 #packages h3 {
     color: #123047;
     font-size: 21px;
+
     margin-bottom: 15px;
 }
 
 
-/* ===== Package Enquiry Button ===== */
+/* =========================================
+   PACKAGE ENQUIRY BUTTON
+========================================= */
 
 .package-button {
     display: inline-block;
@@ -263,7 +292,9 @@ img {
 }
 
 
-/* ===== About Section ===== */
+/* =========================================
+   ABOUT SECTION
+========================================= */
 
 #about {
     background-color: white;
@@ -276,8 +307,9 @@ img {
 }
 
 
-
-/* ===== Contact Section ===== */
+/* =========================================
+   CONTACT SECTION
+========================================= */
 
 #contact {
     background-color: #eaf4f7;
@@ -288,73 +320,83 @@ img {
 }
 
 
+/* =========================================
+   FORM STYLING
+========================================= */
+
 form {
     max-width: 600px;
+
     margin: 30px auto 0;
     padding: 30px;
+
     background-color: white;
     border-radius: 12px;
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-
 form label {
     display: block;
+
     font-weight: bold;
     margin-bottom: 8px;
+
     color: #123047;
 }
-
 
 form input,
 form select,
 form textarea {
     width: 100%;
+
     padding: 12px;
     margin-bottom: 20px;
+
     border: 1px solid #ccd6dd;
     border-radius: 6px;
+
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-
-
 form textarea {
     resize: vertical;
-    
 }
-
 
 form button {
     background-color: #20bfa9;
     color: white;
+
     border: none;
+
     padding: 12px 25px;
     border-radius: 25px;
+
     font-size: 16px;
     font-weight: bold;
+
     cursor: pointer;
+
     transition: background-color 0.3s;
 }
-
-
-
 
 form button:hover {
     background-color: #159985;
 }
 
 
-/* ===== Footer ===== */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
     background-color: #123047;
     color: white;
+
     text-align: center;
     padding: 25px;
 }
-
 
 footer p {
     color: white;
@@ -362,109 +404,209 @@ footer p {
 }
 
 
-/* ===== Responsive Design: Tablets ===== */
-
-@media (max-width: 900px) {
-    #home h2 {
-        font-size: 34px;
-    }
-}
-/* ===== Responsive Design: Mobile ===== */
-
-/* ===== Hamburger Menu ===== */
+/* =========================================
+   HAMBURGER MENU
+========================================= */
 
 /* Hide checkbox */
+
 #menu-checkbox {
     display: none;
 }
 
 /* Hide hamburger on desktop */
+
 .menu-toggle {
     display: none;
 }
 
-/* Mobile Navigation */
+
+/* =========================================
+   TABLET RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    /* Hero heading */
+
+    #home h2 {
+        font-size: 36px;
+    }
+
+    /* Two columns for destinations and packages */
+
+    #destinations,
+    #packages {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
 @media (max-width: 600px) {
 
+    /* Body spacing for fixed mobile header */
+
+    body {
+        padding-top: 65px;
+    }
+
+    /* Mobile header */
+
     header {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        padding: 10px 5%;
+
+        display: flex;
         flex-direction: row;
+
         justify-content: space-between;
         align-items: center;
-        text-align: left;
+
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    /* Website title */
+
+    header h1 {
+        font-size: 22px;
+        line-height: 1.2;
     }
 
     /* Show hamburger icon */
+
     .menu-toggle {
         display: block;
+
         font-size: 28px;
         color: white;
+
         cursor: pointer;
-        padding: 8px;
+
+        padding: 5px;
+        line-height: 1;
     }
 
     /* Hide navigation initially */
+
     #main-nav {
         display: none;
+
         flex-direction: column;
+        align-items: stretch;
+
         position: absolute;
         top: 100%;
         left: 0;
+
         width: 100%;
+
         background-color: #123047;
+
         padding: 15px;
-        z-index: 1000;
+        gap: 5px;
     }
 
     /* Show menu when checkbox is checked */
+
     #menu-checkbox:checked ~ #main-nav {
         display: flex;
     }
 
-    /* Navigation links */
+    /* Mobile navigation links */
+
     #main-nav a {
+        display: block;
+
         padding: 12px;
+
         text-align: center;
         font-size: 16px;
     }
+
+    /* Common sections */
+
+    section {
+        padding: 45px 5%;
+    }
+
+    section h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    /* Hero section */
+
+    #home {
+        min-height: 450px;
+        padding: 70px 5%;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    /* One column for destinations and packages */
+
+    #destinations,
+    #packages {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #destinations > div,
+    #packages > div {
+        padding: 20px;
+    }
+
+    /* Contact form */
+
+    form {
+        padding: 20px;
+    }
+
+    /* Social media icons */
+
+    .social-icons a {
+        font-size: 25px;
+        margin: 0 8px;
+    }
+
 }
 
 
-
-/* ===== Social Media Icons ===== */
-
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
-    display: inline-block;
-    color: white;
-    font-size: 28px;
-    margin: 0 12px;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.social-icons a:hover {
-    color: #43d9c5;
-    transform: scale(1.2);
-}
-
-
-/* =====keyboard Interactive States ===== */
-
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
 
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+.menu-toggle:focus-visible {
     outline: 3px solid #ff6347;
     outline-offset: 3px;
 }
 
-/* ===== Form Focus ===== */
+
+/* =========================================
+   FORM FOCUS
+========================================= */
 
 form input:focus,
 form select:focus,
@@ -474,7 +616,9 @@ form textarea:focus {
 }
 
 
-/* ===== Newsletter Section ===== */
+/* =========================================
+   NEWSLETTER SECTION
+========================================= */
 
 #newsletter {
     background-color: #123047;
@@ -494,20 +638,44 @@ form textarea:focus {
 }
 
 
-/* ===== Responsive Grid ===== */
+/* =========================================
+   SMALL MOBILE DEVICES
+========================================= */
 
-@media (max-width: 900px) {
-    #destinations,
-    #packages {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 380px) {
+
+    header h1 {
+        font-size: 19px;
     }
+
+    .menu-toggle {
+        font-size: 25px;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+
+    #home {
+        min-height: 400px;
+    }
+
 }
 
-@media (max-width: 600px) {
-    #destinations,
-    #packages {
-        grid-template-columns: 1fr;
-    }
+
+/* ===== Button Click Animation ===== */
+
+button,
+.package-button,
+#home a {
+    transition: transform 0.15s ease, background-color 0.3s;
 }
 
+/* Button becomes smaller while clicking */
+
+button:active,
+.package-button:active,
+#home a:active {
+    transform: scale(0.95);
+}
 
